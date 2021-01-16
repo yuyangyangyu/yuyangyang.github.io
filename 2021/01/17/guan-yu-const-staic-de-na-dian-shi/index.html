@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 小余的Blog">
+    <meta name="keywords" content="const、static、静态">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | 小余的Blog</title>
+    <title>关于const、static的那点事 | 小余的Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -205,12 +205,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">关于const、static的那点事</h1>
                 </div>
             </div>
         </div>
@@ -324,9 +324,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/C-%E3%80%81Linux/">
+                                <span class="chip bg-color">C++、Linux</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -338,28 +342,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-01-16
+                    2021-01-17
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-01-16
+                    2021-01-17
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    73
+                    957
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -382,16 +386,58 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+                <p>欢迎👏来到我的小站（羊羊羊），这是我第一次建立自己的Blog，并在此基础上分享自己的日常、记录自己的学习过程。加油！</p>
+<h2 id="const含义"><a href="#const含义" class="headerlink" title="const含义"></a>const含义</h2><p>常类型是指使用类型修饰符<strong>const</strong>说明的类型，常类型的变量或对象的值是不能被更新的。</p>
+<h3 id="const的作用"><a href="#const的作用" class="headerlink" title="const的作用"></a>const的作用</h3><ol>
+<li><p>定义常量</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">const int a <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>检查类型<br> const常量与#define宏定义的区别：<em>const是具有类型的，编译器可以进行安全检查；#define宏定义没有数据类型，只是简单的字符串替换，不进行安全检查。</em><br> const定义的变量类型只有枚举或整数，且以常量表达式初始化时才能作为常量表达式。其他的情况下只有一个const限定的变量，不能将与常量混淆。</p>
+</li>
+<li><p>防止修改、增强程序的健壮性</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">    void f<span class="token punctuation">(</span>const int i<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        i++<span class="token punctuation">;</span>//错误 参数被const所修饰，不能被改变。
+    <span class="token punctuation">}</span>
+    
+<span class="token number">3</span>. 节约空间、减少内存分配
+    const定义的常量，只是给定出了对应的内存地址；而不是像<span class="token comment">#define一样给出的是立即数。所以，const定义的常量在程序运行中只存在一份拷贝，相反#define的宏定义在内存中存在若干个拷贝。   </span>
+    
+<span class="token comment">### const与指针</span>
 
+``` <span class="token function">bash</span>
+const int b  <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+b <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span> //错误 const对象不能被改变
+const string str <span class="token operator">=</span> <span class="token string">"hello world"</span><span class="token punctuation">;</span>
+const int i<span class="token punctuation">;</span>//错误 const变量定义即初始化<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>上述存在的问题比较明显，尝试修改const变量，违背了const关键词的初衷；i为常量，必须进行初始化，因为在常量在定义之后就不能被改变。而const变量的初始化可以在声明出进行或构造函数的初始化列表中进行初始化。</p>
+</li>
+</ol>
+<p><em>const变量的初始化可以同时存在着两种方式，但构造函数的初始化列表将覆盖声明处定义的值</em><br>除了上述的初始化const常量的方式以外，也可以通过下面的方法：</p>
+<p>第一：将常量与static相结合<br>    </p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">static const int num<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p></p>
+<p>第二：在外面初始化<br>    </p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">const int xxx::num <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span> //xxx为类名<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>在C++11下可以直接写成：<br>    <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">static const int num <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+或
+const int num <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>这两种形式在C++11中都支持 编译时加上-std==c++11即可<p></p>
+<p>与const相关的四种指针</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">const char* ptr<span class="token punctuation">;</span> //执行const对象的指针或者指向常量的指针
+char const* ptr<span class="token punctuation">;</span> //同上
+char* const ptr<span class="token punctuation">;</span> //执行类型对象的const对象，常指针。
+const char* ptr<span class="token punctuation">;</span> //以上两种指针的结合体<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>小结：如const位于<em>的左侧，则const就是用来修饰的内容是不可变的，即指针指向的为常量相反const位于</em>的右侧时，const就是修饰指针本身，即指针本身是常量。</p>
+<h3 id="在函数中使用const"><a href="#在函数中使用const" class="headerlink" title="在函数中使用const"></a>在函数中使用const</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">void func<span class="token punctuation">(</span>const A<span class="token operator">&amp;</span> a<span class="token punctuation">)</span><span class="token punctuation">;</span> //A为自定义类型<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>const限定词能保护传入的参数不被修改，同时为提高效率，采用“引用传递”的方式进行传参，不会产生临时对象，对于非内置数据类型时采用此方法传递参数能够极大程度提高效率；对于内置类型的数据而言是不存在构造、析构的过程，且复制也是非常快的。”值传递“和”引用传递“的效率相差不大。</p>
+<h3 id="类中使用const"><a href="#类中使用const" class="headerlink" title="类中使用const"></a>类中使用const</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">class Apple
+<span class="token punctuation">{</span>
+private:
+    int people<span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+public:
+    Apple<span class="token punctuation">(</span>int i<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    const int apple_number<span class="token punctuation">;</span>
+    void take<span class="token punctuation">(</span>int num<span class="token punctuation">)</span> const<span class="token punctuation">;</span>
+    int add<span class="token punctuation">(</span>int num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>在一个类中，任何不会修改的数据成员都应该声明为const，在编写const成员函数时，不慎<strong>修改了数据成员或调用了非const的数据成员</strong>，编译器将指出错误。从而提高程序的健壮性。</p>
+<h2 id="static的含义"><a href="#static的含义" class="headerlink" title="static的含义"></a>static的含义</h2>
                 
             </div>
             <hr/>
@@ -417,7 +463,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yuyangyangyu.github.io/2021/01/16/hello-world/">http://yuyangyangyu.github.io/2021/01/16/hello-world/</a>
+                    <a href="http://yuyangyangyu.github.io/2021/01/17/guan-yu-const-staic-de-na-dian-shi/">http://yuyangyangyu.github.io/2021/01/17/guan-yu-const-staic-de-na-dian-shi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -454,7 +500,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/C-%E3%80%81Linux/">
+                                    <span class="chip bg-color">C++、Linux</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -624,9 +674,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/01/17/guan-yu-const-staic-de-na-dian-shi/">
                     <div class="card-image">
@@ -644,9 +695,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-01-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -655,6 +706,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -670,7 +722,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2021/01/16/hello-world/">
@@ -700,7 +752,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
